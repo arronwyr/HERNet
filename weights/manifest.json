@@ -1,0 +1,54 @@
+{
+  "file": "hernet_inference.pth",
+  "sha256": "884667b5823b0a58829c88505432861363cb0375ce0ff148faaa4f3f5c72f331",
+  "bytes": 104645684,
+  "parameters": 26103164,
+  "precision": "FP32",
+  "auxiliary_heads": false,
+  "source_training_checkpoint_sha256": "9027ecedf1353a5beb067c7f678d122e1261a76e211fce39e30d78d112dc71d5",
+  "architecture_source_sha256": "73627748c292b4c30010b33dbb7490dd6361ed76d5d6091bef4750c9f9945728",
+  "verification": {
+    "reference": "archived recognition model",
+    "tests": [
+      {
+        "case": "1_R_3_2.png",
+        "shape": [
+          1,
+          448,
+          320
+        ],
+        "maximum_absolute_difference": 0.0
+      },
+      {
+        "case": "11387_db28_LR_1_500_0.png",
+        "shape": [
+          1,
+          509,
+          333
+        ],
+        "maximum_absolute_difference": 0.0
+      },
+      {
+        "case": "00002327_1G_R_L01_BP_S03_1000PPI_8BPC_1CH_LP05-1_1_04.png",
+        "shape": [
+          1,
+          376,
+          494
+        ],
+        "maximum_absolute_difference": 0.0
+      },
+      {
+        "case": "seed-independent random core input",
+        "shape": [
+          1,
+          1,
+          512,
+          512
+        ],
+        "maximum_absolute_difference": 0.0
+      }
+    ],
+    "torch_version": "2.8.0+cu128",
+    "tf32": false
+  }
+}

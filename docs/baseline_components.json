@@ -1,0 +1,138 @@
+{
+  "weight_components": [
+    {
+      "component": "Model.model",
+      "bytes": 19142032,
+      "sha256": "1c2c9ec33472d59e31bdb480bdee57aa9e109dc5b91bf01c0466154ee45c2ccd"
+    },
+    {
+      "component": "graph-1122-235356.meta",
+      "bytes": 557040,
+      "sha256": "d66988a471d365579ca5606bdf10e6553fa4e0c90e464cd8d3448f4b707abe4c"
+    },
+    {
+      "component": "model-131000.index",
+      "bytes": 5605,
+      "sha256": "89ec0e83c41ec58cce485839d569a92f68beb51d7f0daedabe542f2d55e3d68b"
+    },
+    {
+      "component": "model-131000.data-00000-of-00001",
+      "bytes": 3988856,
+      "sha256": "3f9da87320f2443da79a819497ffae84f8030cf24477b68ab2d36dc093058520"
+    },
+    {
+      "component": "unetenh.pth",
+      "bytes": 30167177,
+      "sha256": "7d5eae86bccd6d665b472b065788dea78016bda8859f1c004eb33184b6897a9a"
+    },
+    {
+      "component": "LEADER.weights.h5",
+      "bytes": 4254316,
+      "sha256": "0cbf12af936482d10ba54b23f40a9b192ab767df2f81bc96c5954585735fefe6"
+    },
+    {
+      "component": "SNFEN.weights.h5",
+      "bytes": 19807920,
+      "sha256": "84ca9ab96eedfc6f7343fd687b293cb7d45b4ce4755a30081f6457e208960d07"
+    },
+    {
+      "component": "SNFFE.weights.h5",
+      "bytes": 19795992,
+      "sha256": "dcbc01fb273002bfc52e856e569815a796303e1e8c778eb696338969ba75c564"
+    },
+    {
+      "component": "SNFOE.weights.h5",
+      "bytes": 19790896,
+      "sha256": "3cd779dda6e5dd642c90f8f0ffefc2b05a7e86d105e8ad45555356a88cb1ebd4"
+    },
+    {
+      "component": "SUFS.weights.h5",
+      "bytes": 28447464,
+      "sha256": "a524c1e8707a870569aa3ad588f8a02264dc0eeb0acf3db1d1d425cc30751f0f"
+    },
+    {
+      "component": "VotingPose.pth",
+      "bytes": 170531285,
+      "sha256": "0d01f0d987f426f71e84248d247390025ec659c5c2ca4cc5d173e866cb8c7252"
+    },
+    {
+      "component": "desc_model.pth.tar",
+      "bytes": 179879719,
+      "sha256": "4cc3f656be2879f431f3e0d13369db3b2a2eeb6dfcddd336e9933657c194e07a"
+    }
+  ],
+  "wrapper_sources": [
+    {
+      "file": "run_flare_benchmark.py",
+      "sha256": "2a9431d697326a0fa97fca6a25e38842300eea25f5fcf661c9bead426a2aca38"
+    },
+    {
+      "file": "run_fixed_pose_benchmark.py",
+      "sha256": "0480af4c08c7f51f0962d0bf41425f83d8fd50ab573d3ec8acba553242366af3"
+    },
+    {
+      "file": "extract_pyfing_xyt.py",
+      "sha256": "128cff702131d46a1a01b52513bf4d2f00d2c2bcee4b86be741d30a283ff2746"
+    },
+    {
+      "file": "train_test_deploy.py",
+      "sha256": "87d12e6904d82bc0cb3dfb6d5f8550296a165181eb98e6e0b1d9b39f5f7f7010"
+    },
+    {
+      "file": "enhance_latent.py",
+      "sha256": "1fee4be8f94f9d14d064f609c022ad9478efdbef4af430a3a52def5591830600"
+    },
+    {
+      "file": "util_verifinger.py",
+      "sha256": "bac193046d3c5067c9b078dca1bde578bc071645b273ceb2ae7b9bd64da4eb91"
+    }
+  ],
+  "settings": {
+    "NBIS": {
+      "version": "5.0.0",
+      "MINDTCT_flags": [],
+      "Bozorth3_flags": "default pair call or equivalent -p/-G gallery-list call",
+      "historical_score_cap": 127,
+      "historical_score_dtype": "int8"
+    },
+    "LEADER": {
+      "dpi": 500,
+      "quality_threshold": 0.6,
+      "dnn_input_size_multiple": 32,
+      "type_threshold": 0.5,
+      "historical_score_cap": 127
+    },
+    "VeriFinger": {
+      "version": "2025.2",
+      "explicit_engine_parameter_overrides": {},
+      "match_exception_score": 0,
+      "dtype": "int16"
+    },
+    "FLARE": {
+      "pose": "VotingPose",
+      "pose_source": "original probe",
+      "gallery_source": "original",
+      "descriptor": "FDD",
+      "ndim_feat": 6,
+      "input_norm": false,
+      "target_shape": [
+        256,
+        256
+      ],
+      "alignment_scale": 0.5,
+      "score_denominator_floor": 0.001
+    },
+    "UNetEnh": {
+      "pre_enh": true
+    },
+    "FingerGAN": {
+      "weight_origin": "author-released pretrained model",
+      "upstream_default_window": 192,
+      "upstream_default_step": 10,
+      "upstream_default_enhancement_batch_size": 48,
+      "weight_sha256": null,
+      "historical_run_overrides": "not fully archived"
+    }
+  },
+  "note": "Component hashes identify the available pretrained files. They are not a substitute for historical per-run CLI records."
+}

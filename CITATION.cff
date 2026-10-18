@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the associated HERNet research manuscript when using this implementation."
+title: "Hierarchical Spatial Routing of Heterogeneous Experts for Latent Fingerprint Enhancement"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Wang
+    given-names: Yurun
+  - family-names: Liu
+    given-names: Bin
+  - family-names: Qi
+    given-names: Zerong
+  - family-names: Hu
+    given-names: Mingzheng
+  - family-names: Fu
+    given-names: Shujun
